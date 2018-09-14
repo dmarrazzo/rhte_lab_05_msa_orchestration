@@ -1450,7 +1450,7 @@ The main difference between the dispatch service and the other services is the u
 ----
 $ oc create configmap dispatch-service-postgresql-init --from-file=openshift/dispatch-service/postgresql -n $SERVICES_PRJ
 ----
-. Review the `openshift/dispatch-service-postgresql/postgresql-persistent-template.yaml` template. Notice the use of the init-container in the `spec.strategy.recreateParams.execNewPod` section of the deployment config.
+. Review the `openshift/dispatch-service/postgresql-persistent-template.yaml` template. Notice the use of the init-container in the `spec.strategy.recreateParams.execNewPod` section of the deployment config.
 . Deploy PostgreSQL using the template:
 +
 ----
